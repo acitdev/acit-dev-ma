@@ -6,7 +6,7 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: black;
-  animation: fadeToWhite 1.5s forwards;
+  animation: fadeToWhite 1s forwards;
   animation-delay: 2s;
   overflow: hidden;
 }
