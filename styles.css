@@ -1,0 +1,46 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: black;
+  animation: fadeToWhite 1.5s forwards;
+  overflow: hidden;
+}
+
+@keyframes fadeToWhite {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: white;
+  }
+}
+
+.centered-image {
+  opacity: 0;
+  max-width: 90%;
+  max-height: 90vh;
+  border-radius: 0.75rem;
+  /* box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05); */
+  animation: fadeInImage 0.5s ease-out forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes fadeInImage {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+h1 {
+  display: none;
+}
